@@ -11,8 +11,10 @@
       }
       body {
         background-color: black;
+        color:#ffffff;
       }
       .container {
+    
         max-width: 1300px;
         margin-left: 75px;
         margin-right: 75px;
@@ -29,31 +31,36 @@
       p {
         color: rgba(255, 255, 255, 0.5);
         font-size: 12px;
-        display: block;
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
+       line-height: 0;
       }
-      h5 {
-        color: #ffffff;
-        display: block;
-        display: -webkit-box;
-        -webkit-line-clamp: 1;
+      .album-title {
+        font-size: 14px;
+       
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        line-height: 1.5;
       }
       .items {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        line-height: 5%;
+        
       }
       .item1{
-          max-width: 220px;
+          max-width: 20%;
+          padding: 15px 15px 15px 0;
+          
       }
       img{
-          max-width: 200px;
+          width: 100%;
+          border-radius:2%;
+
+        
       }
       .item1 img:hover {
-        -webkit-transform: scale(1.05); transform: scale(1.05);}
-        .item1 h5:hover {
+        -webkit-transform: scale(1.02); transform: scale(1.02);}
+        .album-title:hover {
             color: #c662ef;
         }
     
@@ -68,7 +75,7 @@
         <div class="title">
           <div class="avatar">
             <img
-              src="vuong anh tu.jpeg"
+              src="vuonganhtu.jpeg"
               alt="loi hien thi hinh anh"
               width="50"
               height="50"
@@ -76,33 +83,33 @@
           </div>
           <div class="singer">
             <p>DANH CHO FAN</p>
-            <h5 style="font-size: 15px">Vuong Anh Tu</h5>
+            <div style="font-size: 18px; line-height: 1;">Vuong Anh Tu</div>
           </div>
         </div>
         <div class="items">
           <div class="item1">
             <img src="vuonganhtu1.jpeg" alt="loi hien thi hinh anh" />
-            <h5>Nhung bai hat hay nhat cua Vuong Anh Tu</h5>
+            <div class="album-title">Nhung bai hat hay nhat cua Vuong Anh Tu</div>
             <p>Vuong Anh Tu</p>
           </div>
           <div class="item1">
             <img src="vuonganhtu2.jpeg" alt="loi hien thi hinh anh" />
-            <h5>Dung lai van kip luc (Single)</h5>
+            <div class="album-title">Dung lai van kip luc (Single)</div>
             <p>Vuong Anh Tu</p>
           </div>
           <div class="item1">
             <img src="vuonganhtu3.jpeg" alt="loi hien thi hinh anh" />
-            <h5>Giup anh tra loi nhung cau hoi</h5>
+            <div class="album-title">Giup anh tra loi nhung cau hoi</div>
             <p>Vuong Anh Tu</p>
           </div>
           <div class="item1">
             <img src="vuonganhtu4.jpeg" alt="loi hien thi hinh anh" />
-            <h5>Yeu sau lung em (Single)</h5>
+            <div class="album-title">Yeu sau lung em (Single)</div>
             <p>Vuong Anh Tu</p>
           </div>
           <div class="item1">
             <img src="vuonganhtu5.jpeg" alt="loi hien thi hinh anh" />
-            <h5>Dung de anh thay anh mat em</h5>
+            <div class="album-title">Dung de anh thay anh mat em</div>
             <p>Vuong Anh Tu</p>
           </div>
         </div>
@@ -110,34 +117,34 @@
 
       <div class="block2">
         <div>
-              <h5 style="font-size: 15px">Nhac moi moi ngay</h5>
+              <div style="font-size: 20px">Nhac moi moi ngay</div>
             </div>
           </div>
           <div class="items">
             <div class="item1">
               <img src="vpop.jpeg" alt="loi hien thi hinh anh" />
-              <h5>V-Pop thang 4/2022</h5>
-              <p>MIN &hearts;, Thieu Bao Tram, Ly ly</p>
+              <div class="album-title">V-Pop thang 4/2022</div>
+              <p>MIN &hearts;, Thieu Bao Tram, Ly ly ...</p>
             </div>
             <div class="item1">
                 <img src="usuk.jpeg" alt="loi hien thi hinh anh" />
-                <h5>US-UK thang 4/2022</h5>
-                <p>Harry Styles, Camila Cabello, Shawn Mendes</p>
+                <div class="album-title">US-UK thang 4/2022</div>
+                <p>Harry Styles, Camila Cabello, Shawn Mendes ...</p>
               </div>
               <div class="item1">
                 <img src="kpop.jpeg" alt="loi hien thi hinh anh" />
-                <h5>K-Pop thang 4/2022</h5>
-                <p>Red Velvet, CNT Dream, IVE</p>
+                <div class="album-title">K-Pop thang 4/2022</div>
+                <p>Red Velvet, CNT Dream, IVE ...</p>
               </div>
               <div class="item1">
                 <img src="cpop.jpeg" alt="loi hien thi hinh anh" />
-                <h5>C-Pop thang 4/2022</h5>
-                <p>Tay Ban, Pho Nhu Kieu, Tat Dinh Dinh</p>
+                <div class="album-title">C-Pop thang 4/2022</div>
+                <p>Tay Ban, Pho Nhu Kieu, Tat Dinh Dinh ...</p>
               </div>
               <div class="item1">
                 <img src="vindie.jpeg" alt="loi hien thi hinh anh" />
-                <h5>Indie Viet thang 4/2022</h5>
-                <p>Huyen Tam Mon, hooligan, Hoang Thong</p>
+                <div class="album-title">Indie Viet thang 4/2022</div>
+                <p>Huyen Tam Mon, hooligan, Hoang Thong ...</p>
               </div>
             
             </div>
