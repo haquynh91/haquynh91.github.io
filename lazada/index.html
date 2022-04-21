@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test</title>
+    <style>
+     *{
+       box-sizing: border-box;
+     }
+     body{
+       margin: 0;
+     }
+     .container{
+       max-width: 1320px;
+       margin: auto;
+       display: flex;
+       background: blue
+     }
+     .menu {
+       background: #fff;
+       margin: 0;
+       padding: 0;
+       list-style: none;
+       box-shadow: 0 0 2px 0 rgb(0 0 0 / 25%);
+     }
+     .sub-menu{
+          display: none;
+          position:absolute;
+          list-style: none;
+          left:00;
+          top: 0px;
+          z-index: 1;
+     }
+
+     .menu a{
+       text-decoration: none;
+       color: gray;
+       padding: 15px;
+       display: block;
+     }
+       
+     }
+     .menu li{
+       position: relative;
+     }
+     .menu li:hover a {
+        color: rgb(243, 160, 160);
+        background-color: gray;
+      }
+      
+      }
+      .menu li:{
+          position: relative;
+      }
+      .menu li:hover .sub-menu{
+          display: block;
+      }
+    
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <ul class="menu">
+        <li>
+          <a href="#">Thiet bi dien tu</a>
+          <ul class="sub-menu">
+            <li>
+              <a href="#">dong 1</a>
+            </li>
+            <li>
+                <a href="#">dong 2</a>
+              </li>
+              <li>
+                <a href="#">dong 3</a>
+              </li>
+              <li>
+                <a href="#">dong 4</a>
+              </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Phu kien dien tu</a>
+        </li>
+        <li>
+          <a href="#">TV va thiet bi gia dung</a>
+        </li>
+        <li>
+          <a href="#">Suc khoe va lam dep</a>
+        </li>
+        <li>
+          <a href="#">Hang me be va do choi</a>
+        </li>
+        <li>
+          <a href="#">Sieu thi tap hoa</a>
+          
+        </li>
+      </ul>
+      
+    </div>
+  </body>
+</html>
