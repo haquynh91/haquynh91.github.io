@@ -1,0 +1,91 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lazada</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .container {
+        max-width: 1320px;
+        margin: auto;
+        background-color: rgb(113, 113, 238);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .menu{
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .menu, .menu ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .menu a {
+        text-decoration: none;
+        color: #fff;
+        display: block;
+      }
+      .menu li {
+        padding: 10px 0 10px 10px;
+      }
+      .menu li:hover a {
+        color: rgb(243, 160, 160);
+      }
+      .sub-menu{
+          display: none;
+          position:absolute;
+          left:0;
+          top: 65px;
+      }
+      .menu li:hover .sub-menu{
+          display: block;
+      }
+      .menu li:{
+          position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo"><img src="logo.png" alt="logo" /></div>
+      <ul class="menu">
+        <li>
+          <a href="#">Lo trinh</a>
+        </li>
+        <li>
+          <a href="#">Doanh nghiep</a>
+        </li>
+        <li>
+          <a href="#">Khoa hoc</a>
+        </li>
+        <li>
+          <a href="#">Trai nghiem</a>
+        </li>
+        <li>
+          <a href="#">Chung toi</a>
+          <ul class="sub-menu">
+            <li>
+              <a href="#">dong 1</a>
+            </li>
+            <li>
+                <a href="#">dong 2</a>
+              </li>
+              <li>
+                <a href="#">dong 3</a>
+              </li>
+              <li>
+                <a href="#">dong 4</a>
+              </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <img src="https://media.techmaster.vn/api/static/bub3enc51co7s932dsk0/VpvvjG8b" width="1320"/>
+
+  </body>
+</html>
