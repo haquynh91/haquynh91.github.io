@@ -11,6 +11,7 @@ function cutString(string) {
   return string.substring(0,10)+ "...";
   return string.substr(0,10)+ "...";
   */
+ 
 }
 
 //Viết 1 function có tác dụng biến 1 chuỗi thành chỉ viết hoa chữ cái đầu tiên.
