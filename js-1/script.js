@@ -1,27 +1,35 @@
 //BAI_TAP_2
 // Viết function tính thế kỷ của 1 năm. Biết thế kỷ thứ nhất tính từ năm 1 đến 100.
 function getCentury(year) {
-  return Math.ceil(year/100);
+  return Math.ceil(year / 100);
 }
 
 //Cho 1 chuỗi dài hơn 15 ký tự. Viết 1 function cắt chuỗi, lấy ra 10 ký tự đầu tiên và thêm vào dấu " …" ở cuối chuỗi.
 function cutString(string) {
-  return string.slice(0,10)+ "...";
+  return string.slice(0, 10) + "...";
   /*
   return string.substring(0,10)+ "...";
   return string.substr(0,10)+ "...";
   */
- 
+
+  function cutString2(string, number) {
+    return string.slice(0, number) + "...";
+  }
 }
 
 //Viết 1 function có tác dụng biến 1 chuỗi thành chỉ viết hoa chữ cái đầu tiên.
 function vietHoaChuDau(string) {
-  return string.charAt(0).toUpperCase()+ string.slice(1).toLowerCase();
+  return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+  return string.slice(0, 1).tuUpperCase() + string.slice(1).toLowerCase();
 }
 /*
 chartAt(): xem ký tự của chuỗi tại vị trí nào đó
 */
-
+//Viet 1 funcion truyen vao 1 chuoi va bien thanh 1 chuoi nhu sau: "xin chao cac ban" => "xin-chao-cac-ban"
+function replaceString(string) {
+  return string.replace(/ /g, "-");
+  return string.replaceall(" ", "-");
+}
 
 //BAI_TAP_1
 //Viết 1 function thông báo lên màn hình một lời chào.
@@ -48,4 +56,3 @@ function sum(x, y) {
 function circleArea(r) {
   return Math.PI * r * r;
 }
-
