@@ -29,7 +29,6 @@ function giaiThua(n) {
 function convertString(string) {
   let result = ``;
   for (let i = 1; i <= string.length; i++) {
-    result += string.charAt(string.length- i);
   }
   return result;
 }
