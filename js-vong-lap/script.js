@@ -29,13 +29,26 @@ function giaiThua(n) {
 function convertString(string) {
   let result = ``;
   for (let i = 1; i <= string.length; i++) {
+    result += string.charAt(string.length - i);
   }
   return result;
 }
 //Bài 6. Chỉ dùng vòng lặp for hoặc while, viết function in ra màn hình các số từ 1 đến 100 sao cho những giá trị là chẵn sẽ có màu xanh, những giá trị là lẻ có màu đỏ.
+/* cach 1: for */
 for (let i = 1; i <= 100; i += 2) {
   document.write(
     `<h1 style="color: red";> ${i}</h1>`,
     `<h1 style="color: blue";> ${i + 1}</h1>`
   );
 }
+
+/* cach 2: wwhile 
+let i = 1;
+while (i <= 100) {
+  document.write(
+    `<h1 style="color: red";> ${i}</h1>`,
+    `<h1 style="color: blue";> ${i + 1}</h1>`
+  );
+  i += 2;
+}
+*/
