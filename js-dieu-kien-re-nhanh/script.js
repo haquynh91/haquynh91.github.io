@@ -17,7 +17,7 @@ function timSoLonHon2(x, y) {
 
 //Bài 2. Viết 1 hàm dùng để tính giai thừa của 1 số. Kiểm tra tham số đầu vào phải là 1 số nguyên >= 0, sau đó tính giai thừa và in ra kết quả.
 function giaiThua(n) {
-  if (n >= 0) {
+  if (typeof(n)=="number" && n >= 0 && n==Math.round(n)) {
     let result = 1;
     for (let i = 1; i <= n; i++) {
       result *= i;
