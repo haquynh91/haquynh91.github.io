@@ -20,7 +20,6 @@ function giaiThua(n) {
   if (typeof(n)=="number" && n >= 0 && n==Math.round(n)) {
   /*cach 2: if (typeof(n)=="number" && n >= 0 && n%1==0) {*/
   /*cach 3: if (Number.isInteger(n)=="true" && n >= 0) {*/
-  /*cach 4: isNaN => kiem tra not a number*/
     let result = 1;
     for (let i = 1; i <= n; i++) {
       result *= i;
