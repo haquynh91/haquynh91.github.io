@@ -18,6 +18,8 @@ function timSoLonHon2(x, y) {
 //Bài 2. Viết 1 hàm dùng để tính giai thừa của 1 số. Kiểm tra tham số đầu vào phải là 1 số nguyên >= 0, sau đó tính giai thừa và in ra kết quả.
 function giaiThua(n) {
   if (typeof(n)=="number" && n >= 0 && n==Math.round(n)) {
+  /*cach 2: if (typeof(n)=="number" && n >= 0 && n%1==0) {*/
+  /*cach 3: if (Number.isInteger(n)=="true" && n >= 0) {*/
     let result = 1;
     for (let i = 1; i <= n; i++) {
       result *= i;
@@ -25,6 +27,7 @@ function giaiThua(n) {
     return result;
   } else return "Tham so khong hop le";
 }
+
 //Bài 3. Một sinh viên có điểm kiểm tra môn lập trình web là x dưới dạng số (0 <= x <= 10). Hãy chuyển điểm số sang dạng chữ với điều kiện sau: Từ 8.5 đến 10: Điểm A; Từ 7 đến dưới 8.5: Điểm B; Từ 5.5 đến dưới 7: Điểm C; Từ 4 đến dưới 5.5: Điểm D; Từ 0 đến dưới 4: Điểm F
 function convertScore(x) {
   if (x < 4) {
