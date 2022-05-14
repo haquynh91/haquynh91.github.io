@@ -17,9 +17,9 @@ function timSoLonHon2(x, y) {
 
 //Bài 2. Viết 1 hàm dùng để tính giai thừa của 1 số. Kiểm tra tham số đầu vào phải là 1 số nguyên >= 0, sau đó tính giai thừa và in ra kết quả.
 function giaiThua(n) {
-  if (typeof(n)=="number" && n >= 0 && n==Math.round(n)) {
-  /*cach 2: if (typeof(n)=="number" && n >= 0 && n%1==0) {*/
-  /*cach 3: if (Number.isInteger(n)=="true" && n >= 0) {*/
+  if (typeof n == "number" && n >= 0 && n == Math.round(n)) {
+    /*cach 2: if (typeof(n)=="number" && n >= 0 && n%1==0) {*/
+    /*cach 3: if (Number.isInteger(n)=="true" && n >= 0) {*/
     let result = 1;
     for (let i = 1; i <= n; i++) {
       result *= i;
@@ -60,8 +60,37 @@ function translate(countrycode) {
     case "PL": {
       return "witam";
     }
-    default:{      
+    default: {
       return "xin chao";
     }
   }
+}
+
+function translate2(countrycode) {
+  if ((countrycode = "GE")) {
+    return "haloo";
+  }
+  if ((countrycode = "ES")) {
+    return "hola";
+  }
+  if ((countrycode = "IT")) {
+    return "ciao";
+  }
+  if ((countrycode = "CZ")) {
+    return "ahoj";
+  }
+  if ((countrycode = "PL")) {
+    return "witam";
+  } else return "xinchao";
+}
+
+//Bài 5. Viet ham in ra man hinh cac so tu 1 den 100, trong do: so chia het cho 3 mau cam, chia het cho 5 mau do, chia het cho ca 3 va 5 mau xanh, con lai mau den
+for (let i = 1; i <= 100; i += 1) {
+  if (i % 15 == 0) {
+    document.write(`<h1 style="color: blue";> ${i}</h1>`);
+  } else if (i % 3 == 0) {
+    document.write(`<h1 style="color: orange";> ${i}</h1>`);
+  } else if (i % 5 == 0) {
+    document.write(`<h1 style="color: red";> ${i}</h1>`);
+  } else document.write(`<h1 tyle="color: black";> ${i}</h1>`);
 }
