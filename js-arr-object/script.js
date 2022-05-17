@@ -7,8 +7,8 @@ function checkInfo(acc) {
     acc.password.length <= 32 &&
     acc.password === acc.confirm
   ) {
-    return true;
-  } else return false;
+    return pass;
+  } else return fail;
 }
 //Bài 2: Cho 1 mảng các chuỗi. Viết hàm lọc ra các phần tử có độ dài lớn nhất. Ví dụ với tham số [‘‘aba’’, ‘‘aa’’, ‘‘ad’’, ‘‘c’’, ‘‘vcd’’] thì kết quả trả về [‘‘aba’’, ‘‘vcd’’].
 function getMaxLength(arr) {
