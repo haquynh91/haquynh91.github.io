@@ -4,87 +4,153 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>test</title>
+    <title>lazada</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
     <style>
-     *{
-       box-sizing: border-box;
-     }
-     body{
-       margin: 0;
-     }
-     .container{
-       max-width: 1320px;
-       margin: auto;
-       display: flex;
-       background: blue
-     }
-     .menu {
-       background: #fff;
-       margin: 0;
-       padding: 0;
-       list-style: none;
-       box-shadow: 0 0 2px 0 rgb(0 0 0 / 25%);
-     }
-     .sub-menu{
-          display: none;
-          position:absolute;
-          list-style: none;
-          left:00;
-          top: 0px;
-          z-index: 1;
-     }
+      * {
+        box-sizing: border-box;
+      }
 
-     .menu a{
-       text-decoration: none;
-       color: gray;
-       padding: 15px;
-       display: block;
-     }
-       
-     }
-     .menu li{
-       position: relative;
-     }
-     .menu li:hover a {
+      body {
+        margin: 0;
+      }
+
+      .container {
+        max-width: 1320px;
+        margin: auto;
+        display: flex;
+        background: rgb(181, 181, 240);
+      }
+
+      .menu {
+        background: #fff;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        box-shadow: 0 0 2px 0 rgb(0 0 0 / 25%);
+      }
+
+      .menu a {
+        text-decoration: none;
+        color: gray;
+        padding: 15px;
+        display: block;
+        width: 200px;
+      }
+
+      .menu li:hover a {
+        color: rgb(241, 122, 122);
+        background-color: rgb(243, 240, 240);
+      }
+
+      .menu li:hover .sub-menu {
+        display: block;
+      }
+
+      .menu li:hover .sub-menu li a {
+        background: #fff;
+      }
+
+      .menu li:hover .sub-menu li:hover a {
         color: rgb(243, 160, 160);
-        background-color: gray;
+        background-color: rgb(243, 240, 240);
       }
-      
+
+      .menu .sub-menu {
+        display: none;
+        position: absolute;
+        list-style: none;
+        left: 200px;
+        top: 0px;
+        z-index: 1;
+        padding: 0;
       }
-      .menu li:{
-          position: relative;
+
+      i {
+        float: right;
       }
-      .menu li:hover .sub-menu{
-          display: block;
-      }
-    
     </style>
   </head>
   <body>
     <div class="container">
       <ul class="menu">
         <li>
-          <a href="#">Thiet bi dien tu</a>
+          <a href="#"
+            >Thiet bi dien tu <i class="fa-solid fa-angle-right"></i>
+          </a>
           <ul class="sub-menu">
             <li>
-              <a href="#">dong 1</a>
+              <a href="#">Dien thoai di dong</a>
             </li>
             <li>
-                <a href="#">dong 2</a>
-              </li>
-              <li>
-                <a href="#">dong 3</a>
-              </li>
-              <li>
-                <a href="#">dong 4</a>
-              </li>
+              <a href="#">May tinh bang</a>
+            </li>
+            <li>
+              <a href="#">Laptop</a>
+            </li>
+            <li>
+              <a href="#">May tinh de ban</a>
+            </li>
+            <li>
+              <a href="#">Am thanh</a>
+            </li>
+            <li>
+              <a href="#">Camera giam sat</a>
+            </li>
           </ul>
         </li>
         <li>
-          <a href="#">Phu kien dien tu</a>
+          <a href="#"
+            >Phu kien dien tu <i class="fa-solid fa-angle-right"></i>
+          </a>
+          <ul class="sub-menu">
+            <li>
+              <a href="#">Xe may</a>
+            </li>
+            <li>
+              <a href="#">Trang tri o to</a>
+            </li>
+            <li>
+              <a href="#">Noi that o to</a>
+            </li>
+            <li>
+              <a href="#">Ngoai that o to</a>
+            </li>
+            <li>
+              <a href="#">Phu kien o to</a>
+            </li>
+            <li>
+              <a href="#">Do dien tu cho o to</a>
+            </li>
+          </ul>
         </li>
         <li>
-          <a href="#">TV va thiet bi gia dung</a>
+          <a href="#"
+            >TV va thiet bi gia dung <i class="fa-solid fa-angle-right"></i>
+          </a>
+          <ul class="sub-menu">
+            <li>
+              <a href="#">Tivi</a>
+            </li>
+            <li>
+              <a href="#">Dien gia dung nho</a>
+            </li>
+            <li>
+              <a href="#">Dien gia dung lon</a>
+            </li>
+            <li>
+              <a href="#">Phu kien ti vi</a>
+            </li>
+            <li>
+              <a href="#">Thiet bi khac</a>
+            </li>
+            <li>
+              <a href="#">Phu kien khac</a>
+            </li>
+          </ul>
         </li>
         <li>
           <a href="#">Suc khoe va lam dep</a>
@@ -94,10 +160,8 @@
         </li>
         <li>
           <a href="#">Sieu thi tap hoa</a>
-          
         </li>
       </ul>
-      
     </div>
   </body>
 </html>
