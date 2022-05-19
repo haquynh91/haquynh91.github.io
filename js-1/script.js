@@ -20,7 +20,7 @@ function cutString(string) {
 //Viết 1 function có tác dụng biến 1 chuỗi thành chỉ viết hoa chữ cái đầu tiên.
 function vietHoaChuDau(string) {
   return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
-  return string.slice(0, 1).tuUpperCase() + string.slice(1).toLowerCase();
+  return string.slice(0, 1).toUpperCase() + string.slice(1).toLowerCase();
 }
 /*
 chartAt(): xem ký tự của chuỗi tại vị trí nào đó
