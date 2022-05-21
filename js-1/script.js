@@ -52,6 +52,7 @@ function sum(x, y) {
   return x + y;
 }
 
+
 // viet function tinh dien tich hinh tron
 function circleArea(r) {
   return Math.PI * r * r;
