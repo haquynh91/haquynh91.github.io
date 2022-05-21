@@ -1,57 +1,36 @@
-//Bài 1. Một trang web cho phép người dùng tạo tài khoản. Hãy viết hàm kiểm tra tính hợp lệ của thông tin người dùng nhập vào. Nếu hợp lệ trả về “Pass”, nếu không hợp lệ trả về “Fail”. Hãy kiểm tra username phải khác rỗng và không được vượt quá 20 ký tự, password phải có độ dài từ 6 đến 32 ký tự, confirm phải giống password.
-function checkInfo(acc) {
-  if (
-    acc.username &&
-    acc.username.length <= 20 &&
-    acc.password.length >= 6 &&
-    acc.password.length <= 32 &&
-    acc.password === acc.confirm
-  ) {
-    return pass;
-  } else return fail;
+//Bài 1: Viết hàm chuyển đổi nhiệt độ từ độ C sang độ F, tham số truyền vào là 1 số nguyên biểu thị độ C. Ví dụ tham số truyền vào là -30 thì kết quả trả về là -22.
+function cToF(c){
+  return c*9/5+32;
 }
-//Bài 2: Cho 1 mảng các chuỗi. Viết hàm lọc ra các phần tử có độ dài lớn nhất. Ví dụ với tham số [‘‘aba’’, ‘‘aa’’, ‘‘ad’’, ‘‘c’’, ‘‘vcd’’] thì kết quả trả về [‘‘aba’’, ‘‘vcd’’].
+//Bài 2: Cho 1 mảng có độ dài lớn hơn 2, chứa các số khác nhau. Hãy viết hàm tìm ra số lớn thứ nhì trong mảng.
+function getSecondBiggestNumber(arr){
+  arr.sort(function (a,b){ return b-a});
+  return arr[1];
+}
+
+//Bài 3: Cho 1 mảng các chuỗi bất kỳ có độ dài khác nhau. Hãy viết hàm tìm ra chuỗi có độ dài lớn nhất.
 function getMaxLength(arr) {
-  let lengthArr = [];
-  for (let i = 0; i < arr.length; i++) {
-    lengthArr[i] = arr[i].length;
-  }
+  lengthArr = arr.map(function(str){return str.length});
   maxlength = Math.max.apply(Math, lengthArr);
-  let result = [];
   for (let i = 0; i < arr.length; i++) {
     if (lengthArr[i] == maxlength) {
-      result.push(arr[i]);
+      return arr[i];
     }
   }
-  return result;
 }
 
-//cach 2
-function getMaxLength2(arr) {
-  let result= [arr[0]];
-  let maxlength= arr[0].length;
+//Bài 4: Viết hàm có 2 tham số là 2 chuỗi string và target khác rỗng, dùng để kiểm tra chuỗi string có kết thúc bởi chuỗi target hay không. Kết quả trả về là true hoặc false.
+function checkTargetInString(str, target){
+  return str.endsWith(target);
+}
 
-  for (let i = 1; i < arr.length; i++) {
-    if (arr[i].length > maxlength) {
-      result = [];
-      result.push(arr[i]);
-      maxlength = arr[i].length;
-    }
-    if (arr[i].length === maxlength) {
-      result.push(arr[i]);
+//Bài 5: Cho 1 mảng các chuỗi. Hãy kiểm tra xem trong mảng đó có phần tử nào bị lặp lại hay không (xuất hiện 2 lần trở lên). Kết quả trả về true (nếu lặp) hoặc false (nếu không lặp).
+function checkPhanTuLap(arr) {
+  arr.sort();
+  for (let i=0; i<arr.length-1; i++) {
+    if (arr[i]===arr[i+1]) {
+      return true;
     }
   }
-  return result;
+  return false;
 }
-
-//Bài 3: Cho 1 mảng các object chứa thông tin sinh viên dạng { name: ‘‘Huy’’, age: 20 }. Viết hàm tính ra số tuổi trung bình của toàn bộ sinh viên.
-function averageAge(students) {
-  let sum = 0;
-  for (let i = 0; i < students.length; i++) {
-    sum += students[i].age;
-  }
-  return sum / students.length;
-}
-
-
-
