@@ -52,6 +52,3 @@ function averageAge(students) {
   }
   return sum / students.length;
 }
-
-
-
