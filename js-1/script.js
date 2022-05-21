@@ -57,5 +57,3 @@ function sum(x, y) {
 function circleArea(r) {
   return Math.PI * r * r;
 }
-
-
