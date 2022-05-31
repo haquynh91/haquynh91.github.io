@@ -1,148 +1,195 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" type="image/jpg" href="87502.png"/>
-    <title>Cho canh</title>
-    <style>
-      *{
-       box-sizing: border-box;
-     }
-      body {
-        text-align: center;
-        margin: 50px;
-       
-      }
-      .container {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        margin: auto;
-      }
-      .item {
-        width: 32%;
-        padding: 0, 10px, 30px,0;
-        text-align: center;
-        padding-bottom: 50px;
-      }
-      .title {
-        font-size: 18px;
-        color: black;
-        text-decoration: none;
-      }
-      img {
-        width: 100%;
-        border-radius: 2%;
-      }
-      img:hover {
-        -webkit-transform: scale(1.02);
-        transform: scale(1.02);
-        transition-duration: 0.1s;
-      }
-      .description {
-        text-align: justify;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        display: -webkit-box;
-      }
-      a{
-        text-decoration: none;
-      }
-      a:hover{
-        color: #c662ef;
-        transition-duration: 0.1s;
-      }
-    </style>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
-    <h1>CHO CANH</h1>
-    <div class="container">
-      <div class="item">
-        <a href="cho-beagle.html"> <img src="cho-beagle-1.jpeg" alt="Anh 1" /> </a>
-        <div class="title">
-          <a href="cho-beagle.html"> <b>Cho Beagle</b> </a>
-        </div>
-        
-        <div class="description">
-          Chó Beagle xuất hiện cách đây từ khoảng 2400 năm về trước và đó là kết
-          quả của sự lai tạo giữa chó bản địa Anh và chó săn thỏ Talbot. Khoảng
-          thế kỷ XIX, Beagle du nhập đến Anh Quốc và dần trở nên phổ biến khắp
-          châu Âu.
-        </div>
-      </div>
+    <section class="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-8">
+            <div class="banner">
+              <img
+                src="https://media.techmaster.vn/api/static/brbgh4451coepbqoch60/WDajvtQ8"
+                alt=""
+              />
+            </div>
+          </div>
 
-      <div class="item">
-        <a href="cho-chihuahua.html"> <img src="cho-chihuahua.jpeg" alt="Anh 2" /> </a>
-        <div class="title">
-          <a href="cho-chihuahua.html"> <b>Cho Chihuahua</b> </a>
-        </div>
-        
-        <div class="description">
-          Chihuahua là chú chó nhỏ nhất trong mọi loài chó trên thế giới và cũng
-          là giống chó lâu đời nhất ở châu Mỹ. Chú chó này có nguồn gốc từ
-          Mexico nhưng lại được cả thế giới biết đến nhờ Trung Quốc. Tên của
-          chúng được lấy từ tên một bang của Mexico, bang Chihuahuan, là nơi mà
-          chú chó được tìm thấy.
-        </div>
-      </div>
+          <!-- Day la container nho????? -->
+          <div class="col-4">
+            <div class="newest-posts">
+              <div class="post">
+                <div class="row">
+                  <div class="col-3">
+                    <div class="post-thumbnail">
+                      <img
+                        src="https://media.techmaster.vn/api/static/F1joWhM7/VhokwPIm"
+                        alt=""
+                      />
+                    </div>
+                  </div>
 
-      <div class="item">
-        <a href="cho-husky.html"> <img src="cho-husky.jpeg" alt="Anh 3" /> </a>
-        <div class="title">
-          <a href="cho-husky.html"> <b>Cho Husky</b> </a>
-        </div>
-       
-        <div class="description">
-          Siberian Husky, là giống chó có nguồn gốc từ vùng Đông Bắc Siberia,
-          Nga. Tại đây, từ khoảng hơn 3000 năm trước, chúng đã được tộc người
-          Chukchi nuôi dưỡng và huấn luyện để giúp đỡ con người trong việc di
-          chuyển hay vận chuyển hàng hóa.
-        </div>
-      </div>
+                  <div class="col-9">
+                    <div class="post-description">
+                      <h2 class="post-title">
+                        Tại sao Laravel lại là framework PHP tốt nhất???
+                      </h2>
 
-      <div class="item">
-        <a href="cho-lap-xuong.html"> <img src="cho-lap-xuong.jpeg" alt="Anh 4" /> </a>
-        <div class="title">
-          <a href="cho-lap-xuong.html"> <b>Cho Lap xuong</b> </a>
-        </div>
-        
-        <div class="description">
-          Chó Lạp xưởng hay còn được gọi với tên tiếng Anh là chó Dachshund, là
-          giống chó có nguồn gốc từ Đức và được biết đến như một loài chó săn có
-          kích thước nhỏ.
-        </div>
-      </div>
+                      <p class="post-short-detail">
+                        Bài viết này chúng ta sẽ cùng tìm hiểu tại sao Laravel
+                        lại được đánh giá là Framework PHP...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-      <div class="item">
-        <a href="cho-pug.html"> <img src="cho-pug.jpeg" alt="Anh 5" /> </a>
-        <div class="title">
-          <a href="cho-pug.html"> <b>Cho Pug</b> </a>
-        </div>
-       
-        <div class="description">
-          Nguồn gốc thật sự của những chú chó Pug “mặt xệ” hiện nay vẫn chưa
-          được xác định. theo nhiều nguồn thông tin thì chú chó “mặt xệ” này đã
-          xuất hiện từ thời nhà Hán - Trung Quốc vào khoảng những năm 200 TCN.
-          Lúc bấy giờ, chó Pug được xếp vào dòng dõi quý tộc, được hưởng thụ
-          cuộc sống xa hoa và những người nuôi chó Pug chủ yếu là quan lại,
-          hoàng thân, quốc thích Trung Quốc.
-        </div>
-      </div>
+              <div class="post">
+                <div class="row">
+                  <div class="col-3">
+                    <div class="post-thumbnail">
+                      <img
+                        src="https://media.techmaster.vn/api/static/F1joWhM7/VhokwPIm"
+                        alt=""
+                      />
+                    </div>
+                  </div>
 
-      <div class="item">
-        <a href="cho-shiba.html"> <img src="cho-shiba.jpeg" alt="Anh 6" /> </a>
-        <div class="title">
-          <a href="cho-shiba.html"> <b>Cho Shiba</b> </a>
-        </div>
-       
-        <div class="description">
-          Shiba Inu là giống chó vàng nổi tiếng của Nhật Bản và là 1 trong 6
-          giống chó bản địa nguyên thủy của đất nước mặt trời mọc.
+                  <div class="col-9">
+                    <div class="post-description">
+                      <h2 class="post-title">
+                        Tại sao Laravel lại là framework PHP tốt nhất???
+                      </h2>
+
+                      <p class="post-short-detail">
+                        Bài viết này chúng ta sẽ cùng tìm hiểu tại sao Laravel
+                        lại được đánh giá là Framework PHP...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="post">
+                <div class="row">
+                  <div class="col-3">
+                    <div class="post-thumbnail">
+                      <img
+                        src="https://media.techmaster.vn/api/static/F1joWhM7/VhokwPIm"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-9">
+                    <div class="post-description">
+                      <h2 class="post-title">
+                        Tại sao Laravel lại là framework PHP tốt nhất???
+                      </h2>
+
+                      <p class="post-short-detail">
+                        Bài viết này chúng ta sẽ cùng tìm hiểu tại sao Laravel
+                        lại được đánh giá là Framework PHP...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
+
+    <section class="intro">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <div class="text">Giới thiệu về text master</div>
+          </div>
+
+          <div class="col-6">
+            <div class="images">
+              <img
+                src="https://techmaster.vn/resources/image/big-intro.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="disparity">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <div class="disparity-item">
+              <div class="disparity-icon">
+                <img
+                  src="https://techmaster.vn/resources/image/lecture.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="disparity-content">
+                Lựa chọn học trực tiếp tại trung tâm hoặc học trực tuyến có
+                tương tác phù hợp với nhu cầu học viên
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3">
+            <div class="disparity-item">
+              <div class="disparity-icon">
+                <img
+                  src="https://techmaster.vn/resources/image/lecture.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="disparity-content">
+                Lựa chọn học trực tiếp tại trung tâm hoặc học trực tuyến có
+                tương tác phù hợp với nhu cầu học viên
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3">
+            <div class="disparity-item">
+              <div class="disparity-icon">
+                <img
+                  src="https://techmaster.vn/resources/image/lecture.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="disparity-content">
+                Lựa chọn học trực tiếp tại trung tâm hoặc học trực tuyến có
+                tương tác phù hợp với nhu cầu học viên
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3">
+            <div class="disparity-item">
+              <div class="disparity-icon">
+                <img
+                  src="https://techmaster.vn/resources/image/lecture.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="disparity-content">
+                Lựa chọn học trực tiếp tại trung tâm hoặc học trực tuyến có
+                tương tác phù hợp với nhu cầu học viên
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
