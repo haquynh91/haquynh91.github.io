@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+}
+.block {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+}
+.vuong {
+  position: relative;
+}
+.tron {
+  border-radius: 50%;
+  position: absolute;
+  left: 50px;
+}
+.tron2 {
+  left: 0;
+  top: 50px;
+}
+.tim {
+  height: 200px;
+  width: 200px;
+  transform: rotate(-135deg);
+}
