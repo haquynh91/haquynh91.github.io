@@ -163,6 +163,20 @@ header{
   color:#fff;
   
 }
+.cartoon{
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px ;
+}
+.more{
+  display: block;
+  width: 120px;
+  background-color: red;
+  color:#fff;
+  margin: 0 auto;
+  padding: 6px 12px;
+  text-align: center;
+  border-radius: 2px;
+}
 /*.item-play-button {
   color: #fff;
   position: absolute;
