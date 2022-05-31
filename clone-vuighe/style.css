@@ -1,0 +1,300 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 1260px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+header{
+  top: 0;
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid rgb(172, 164, 164);
+  padding-top: 10px;
+  z-index: 10;
+}
+
+.logo-box{
+  max-width: 150px;
+  margin-right: 50px;
+}
+.menu{
+  list-style: none;
+  height: 48.17px;
+  margin-right: 50px;
+}
+.menu-item{
+  margin-right: 10px;
+  margin-top: 10px;
+  border-bottom: 0;
+}
+.menu-item:hover{
+  border: 1px solid rgb(172, 164, 164); 
+  border-bottom: 0;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+}
+.menu-item:hover .menu-item-link{
+  border: 0;
+}
+.menu-item-link{
+  display: block;
+  color: black;
+  padding: 4px 10px;
+  text-decoration: none;
+  border: 1px solid rgb(172, 164, 164);
+  border-radius: 25px;
+}
+.sub-menu{
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  border-bottom: 1px solid rgb(172, 164, 164);
+  margin-top: 1px;
+  padding-bottom: 10px;
+  display: none;
+}
+.menu-item:hover .sub-menu{
+  display: block;
+}
+.search-form {
+  border: 1px solid rgb(131, 116, 116);
+  border-radius: 25px;
+}
+.btn-play{
+  color: #fff;
+  top: 50px;
+  left: 60px;
+  opacity: 0.75;
+  border-radius: 100%;
+  width: 70px;
+  height: 70px;
+  background: #232323;
+}
+
+.input-search{
+  width: 300px;
+  border: 1px solid rgb(131, 116, 116);
+  border-radius: 25px;
+  padding: 5px;
+}
+.btn-search{
+  top: 4px;
+  right: 7px;
+  border: transparent;
+}
+
+.btn-actions{
+  margin-left: auto;
+}
+.btn{
+  width: 34px;
+  height: 34px;
+  margin-left: 5px;
+  border: 1px solid transparent;
+  border-radius: 50px;
+}
+.bi{
+  font-size: 20px;
+}
+.bi-brightness-low{
+  font-size: 25px;
+}
+
+
+.item-description {
+  color: #fff;
+  top: 140px;
+  margin-left: 10px;
+}
+.item-info{
+  font: 12px;
+}
+.slider{
+  margin-top: 80px;
+}
+.slider.right{
+  margin-top: 5px;
+}
+.slider-meta{
+  background: transparent;
+}
+.btn-play-bottom{
+  left: 15px;
+  bottom: 15px;
+  color:#fff;
+  background-color: #232323;
+  border-radius: 100%;
+  opacity: 0.75;
+  width: 70px;
+  height: 70px;
+}
+.btn-play-top{
+  left: 15px;
+  top: 15px;
+  color:#fff;
+  background-color: #232323;
+  border-radius: 100%;
+  opacity: 0.75;
+  width: 70px;
+  height: 70px;
+}
+
+.bi-play-fill{
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 60px;
+  padding-left: 6px;
+  padding-top: 4px;
+}
+.slider-description{
+  bottom: 30px;
+  left: 100px;
+  color:#fff;
+  
+}
+/*.item-play-button {
+  color: #fff;
+  position: absolute;
+  top: 50px;
+  left: 60px;
+  opacity: 0.75;
+  visibility: hidden;
+  border-radius: 100%;
+  width: 70px;
+  height: 70px;
+  background: #232323;
+}
+
+.play-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 20px;
+}
+*/
+
+.thumnail:hover .item-play-button {
+  visibility: visible;
+}
+
+.thumnail {
+  width: 100%;
+  overflow: hidden;
+}
+
+.thumnail img{
+  width: 100%;
+  transition: transform 0.3s;
+}
+
+.thumnail:hover img {
+  /* -webkit-transform: scale(1.8) rotate(0.01deg); */
+  /* transform: scale(1.8) rotate(0.01deg); */
+  transform: scale(1.2);
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 5px;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+[class*="col-"] {
+  margin-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.col-1 {
+  width: 8.333333%;
+}
+
+.col-2 {
+  width: 16.666667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.333333%;
+}
+
+.col-5 {
+  width: 41.666667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.333333%;
+}
+
+.col-8 {
+  width: 66.666667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.333333%;
+}
+
+.col-11 {
+  width: 91.666667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+/* Classes Utilities*/
+.d-flex {
+  display: flex;
+}
+.j-center{
+  justify-content: center;
+
+}
+.j-end{
+  justify-content: end;
+
+}
+.j-between{
+  justify-content:space-between;
+}
+
+.a-center{
+  align-items: center;
+}
+.as-end{
+  align-self: end;
+}
+.relative{
+  position: relative;
+}
+.absolute{
+  position: absolute;
+}
+.fixed{
+  position: fixed;
+}
