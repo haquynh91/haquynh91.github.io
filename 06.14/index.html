@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <input type="text" id="query" oninput="realTimeSearch(event)" />
+    <button onclick="renderTable()">search</button>
+    <table>
+      <caption>
+        Bang diem
+      </caption>
+
+      <thead>
+        <tr>
+          <th>Ten</th>
+          <th>Diem</th>
+          <th>Xep loai</th>
+        </tr>
+      </thead>
+
+      <tbody id="tbody"></tbody>
+    </table>
+    <script src="script.js"></script>
+  </body>
+</html>

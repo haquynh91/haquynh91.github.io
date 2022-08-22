@@ -1,0 +1,93 @@
+section{
+  margin-bottom: 50px;
+}
+.navbar {
+  border: 1px solid grey;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 10%;
+}
+.logo {
+  width: 33.33%;
+}
+#collapsibleNavId {
+  width: 33.33%;
+}
+.icon {
+  width: 33.33%;
+}
+.icon i{
+  float: right;
+}
+.intro-banner {
+  background-color: aliceblue;
+  width: 50%;
+  height: 50%;
+  top: 30%;
+  bottom: 20%;
+  left: 25%;
+  right: 25%;
+  text-align: center;
+}
+.banner-heading {
+  margin-top: 8%;
+}
+.intro-banner p {
+  padding-left: 25%;
+  padding-right: 25%;
+}
+.intro-banner button {
+  width: 40%;
+  margin-top: 8%;
+}
+.border {
+  border: 3px solid black;
+}
+.products{
+  text-align: center;
+}
+.products .container{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.price{
+  text-align: right;
+}
+/* [class*="col-"] {
+  padding-left: 10px;
+  padding-right: 10px;
+} */
+
+/* Classes Utilities*/
+.d-flex {
+  display: flex;
+}
+.d-inline-block {
+  display: inline-block;
+}
+.j-center {
+  justify-content: center;
+}
+.j-end {
+  justify-content: end;
+}
+.j-between {
+  justify-content: space-between;
+}
+
+.a-center {
+  align-items: center;
+}
+.as-end {
+  align-self: end;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.fixed {
+  position: fixed;
+}

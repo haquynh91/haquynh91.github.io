@@ -1,0 +1,29 @@
+.nav-center {
+  justify-content: center;
+  width: 100%;
+}
+
+.img-style {
+  width: 100vw;
+  height: calc(100vh-40px);
+}
+
+.border-bottom {
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.border-top {
+  border-top: 1px solid #cdcdcd;
+  margin-top: 50px;
+  padding-top: 20px;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+  margin: 15px 0;
+}
+
+#numCarts {
+  font-size: 7px;
+}
