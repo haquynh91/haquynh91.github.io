@@ -8,7 +8,7 @@ function reverce(n) {
   }
   return Number(result);
 }
-console.log(reverce(1117220));
+console.log(reverce(111722));
 
 //2, Write a JavaScript function that accept a list of country names as input and returns the longest country name as output.
 //Sample function : Longest_Country_Name([“Australia”, “Germany”, “United States of America”])
@@ -77,7 +77,7 @@ console.log(computeSumArray([1, 0, 2, 3, 4], [3, 5, 6, 7, 8, 13]));
 
 function repeatString(s, time) {
   var result = "";
-  if (!s || !time) {
+  if (!s || !time || time <= 0) {
     return "Error in string or count.";
   } else {
     for (let i = 0; i < time; i++) {
