@@ -1,14 +1,14 @@
 //1, Viết 1 function đảo ngược một số.
 //VD: 111722 --> 227111
 function reverce(n) {
-  const string = n.toString(10);
+  const string = n.toString();
   var result = ``;
   for (let i = 0; i <= string.length; i++) {
     result += string.charAt(string.length - i);
   }
   return Number(result);
 }
-console.log(reverce(111722));
+console.log(reverce(1117220));
 
 //2, Write a JavaScript function that accept a list of country names as input and returns the longest country name as output.
 //Sample function : Longest_Country_Name([“Australia”, “Germany”, “United States of America”])
