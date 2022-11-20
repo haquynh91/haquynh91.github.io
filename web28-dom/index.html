@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <h3>
+      1. Write a JavaScript program to calculate add, sub, mul, div of two
+      numbers (input from user).
+    </h3>
+    <form>
+      <label for="1stNum">1st Number:</label><br />
+      <input type="number" id="1stNum" name="1stNum" /><br />
+      <label for="2ndNum">2nd Number:</label><br />
+      <input type="number" id="2ndNum" name="2ndNum" /><br />
+      <input onclick="add()" type="button" value="Add(+)" />
+      <input onclick="sub()" type="button" value="Subtract(-)" />
+      <input onclick="mul()" type="button" value="Multiply(*)" />
+      <input onclick="div()" type="button" value="Divide(/)" />
+    </form>
+    <span>The result is: </span>
+    <span id="result"></span>
+    <div>History:</div>
+    <div id="history"></div>
+
+    <h3>
+      2. Write a Javascript program to try text style by inputs then apply to
+      text
+    </h3>
+    <div id="text">The quick brown fox</div>
+    <form>
+      <label for="fontSize">Font Size:</label><br />
+      <input type="text" id="fontSize" name="fontSize" /><br />
+      <label for="fontWeight">Font Weight:</label><br />
+      <input type="text" id="fontWeight" name="fontWeight" /><br />
+      <label for="color">Color:</label><br />
+      <input type="text" id="color" name="color" /><br />
+      <label for="fontFamily">Font Family:</label><br />
+      <input type="text" id="fontFamily" name="fontFamily" /><br />
+      <input onclick="applyStyle()" type="button" value="Apply" />
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
