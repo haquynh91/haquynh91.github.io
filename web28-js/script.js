@@ -1,7 +1,12 @@
+//Bai 3: Dung "Set"
+
 //1, Viết 1 function đảo ngược một số.
 //VD: 111722 --> 227111
 function reverce(n) {
   const string = n.toString();
+  console.log(n);
+  console.log(typeof n);
+  console.log(string);
   var result = ``;
   for (let i = 0; i <= string.length; i++) {
     result += string.charAt(string.length - i);
@@ -103,3 +108,15 @@ function countWord(str) {
   return splitStrToArr.length;
 }
 console.log(countWord(" the quick   brown fox  "));
+
+const cart = [
+  { name: "cam", price: 10, qty: 2 },
+  { name: "xoai", price: 20, qty: 1 },
+  { name: "mit", price: 15, qty: 3 },
+  { name: "dua", price: 30, qty: 1 },
+];
+var total = 0;
+for (let i = 0; i < cart.length; i++) {
+  total += cart[i].price * cart[i].qty;
+}
+console.log(total);
